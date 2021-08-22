@@ -1,4 +1,51 @@
-/* Hero Styling Section */
-.hero {
-    background-image: url(assets/images/photo-of-me.jpeg);
+/*  General */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
+
+/*  header  */
+
+header {
+    display: flex;
+    justify-content: space-between;
+
+    
+}
+
+/* header end  */
+
+
+/* hero */
+
+.hero {
+    background-image: url(../images/main-photo.jpeg);
+    background-size: cover;
+}
+
+/* hero end */
+
+
+/* bio */
+
+/* bio end */
+
+
+/* design portfolio */
+
+/* design portfolio end */
+
+
+/* creative output */
+
+/* creative output end */
+
+
+/* contact */
+
+.contact img {
+    width: 100%;
+}
+
+/* contact end */

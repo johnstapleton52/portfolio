@@ -78,7 +78,7 @@ THEN I am presented with a responsive layout that adapts to my viewport
        <div>
          <h2>About Me</h2>
        </div>
-       <div>
+       <div class="bio-text">
            <p>
                John was born and raised for the better half of his childhood in the Bay Area of Northern California.
                He spent a sizeable portion of his youth moving frequently, giving him a diverse background and an awareness of different cultures.
@@ -93,22 +93,25 @@ THEN I am presented with a responsive layout that adapts to my viewport
 
 
 <!--  Design Portfolio  -->
-    <section id="design-portfolio" class="portfolio">
+    <section id="design-portfolio" class="design-portfolio">
         <div>
             <h2>Design Portfolio</h2>
         </div>
-        <div>
-            <p>
-                "Put your portfolio here."
-            </p>
-            <button>
+        <div class="website-selector flex">
+            <button id="first-button" class="website-button">
                 Website 1
             </button>
-            <button>
+            <button class="website-button">
                 Website 2
-            </button>
-            <button>
+            </button class="website-button">
+            <button class="website-button">
                 Website 3
+            </button>
+            <button class="website-button">
+                Website 4
+            </button>
+            <button class="website-button">
+                Website 5
             </button>
         </div>
 
@@ -118,11 +121,14 @@ THEN I am presented with a responsive layout that adapts to my viewport
 
 
 <!--  Creative Output  -->
-    <section id="creative-output" class="portfolio">
+    <section id="creative-output" class="creative-output">
         <div>
             <h2>Creative Output</h2>
-                <a href="spotify.com">Spotify</a>
-                <a href="applemusic.com">Apple Music</a>
+        </div>
+        <div class="creative-output-selector flex">
+            
+                <a href="https://open.spotify.com/artist/0KFIJc9Srx4ATt7m5fShW9?si=dVuwZrRdQl6P8QuYlhsiig&dl_branch=1">Spotify</a>
+                <a href="https://music.apple.com/us/artist/john-dick-stapleton/1495274152">Apple Music</a>
         </div>
 
     </section>
@@ -135,7 +141,7 @@ THEN I am presented with a responsive layout that adapts to my viewport
             <h2>Contact Me</h2>
         </div>
 
-        <div class="contact-form">
+        <div class="contact-form flex">
             <form>
                 <p>Email: </p>
                 <a href="mailto:johnstapleton52@gmail.com">johnstapleton52@gmail.com</a>
@@ -146,7 +152,7 @@ THEN I am presented with a responsive layout that adapts to my viewport
                 <p>Instagram:</p>
                 <a href="https://www.instagram.com/johndickstapleton/">@johndickstapleton</a>
 
-                <img src="assets/images/contact-photo.jpg" alt="Friendly photo of John">
+                <div id="contact-photo"><img src="assets/images/contact-photo.jpg" alt="Friendly photo of John"></div>
             </form>
         </div>
     </section>
@@ -155,9 +161,11 @@ THEN I am presented with a responsive layout that adapts to my viewport
 
 
 <!--  Footer  -->
+<footer>
     <div>
-        <h2>Made with love by John</h2>
+        <h2>Made with love by John.</h2>
     </div>
+</footer>
 
 <!--  End of footer  -->
     

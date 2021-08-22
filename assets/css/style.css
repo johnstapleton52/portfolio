@@ -7,8 +7,29 @@
 
 body {
     color:var(--third-col);
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Garamond, Verdana, Geneva, Tahoma, sans-serif;
     font-weight: lighter;
+}
+
+section {
+    padding: 80px 40px;
+    display: block;
+    height: 825px;
+}
+
+section div h2 {
+    text-align: center;
+    padding: 0 0 40px;
+    font-size: 60px;
+    border-bottom: 4px solid;
+    margin: 0 auto 25px auto;
+    width: 65%;
+    border-color: var(--fourth-col);
+}
+
+.flex {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 /* color palette */
@@ -16,6 +37,7 @@ body {
     --main-col: #d0a494;
     --second-col: #9de4ef;
     --third-col: #864e30;
+    --fourth-col: #443731;
 }
 
 body {
@@ -24,72 +46,172 @@ body {
 }
 
 /*  header  */
-
 header {
     display: flex;
     justify-content: space-between;
+    background-color: var(--third-col);
     background-image: url(../images/main-photo.jpeg);
+    background-size: cover;
+    background-position: top;
     flex-wrap: wrap;
-    padding: 0 0 20px;
+    padding: 25px 0;
 }
 
-header h1 {
-    font-size: 60px;
-    color: var(--main-col);
+header h1 a {
+    font-size: 42px;
+    color: var(--third-col);
+    padding: 0 20px;
+}
+
+header a {
     text-decoration: none;
 }
 
 header nav {
-    margin: 7px 0;
+    margin: 10px 0;
 }
 
 header nav ul {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    list-style-type: none;
 }
 
 header nav ul li {
-    padding: 0 17px;
+    padding: 0 10px;
 }
 
 header nav ul li a {
     text-decoration: none;
     font-size: 25px;
+    color: var(--third-col);
+    padding: 15px 25px;
+}
+
+header nav ul li a:hover {
+    color: var(--second-col);
+    background-color: var(--third-col);
+    border-radius: 48%;
 }
 
 /* header end  */
 
 
 /* hero */
-
 .hero {
     background-image: url(../images/main-photo.jpeg);
     background-size: cover;
     height: 700px;
+    background-position: center;
 }
 
 /* hero end */
 
 
 /* bio */
+.biography div p {
+    line-height: 2;
+    font-size: 25px;
+    font-style: italic;
+    text-align: center;
+    padding: 0 100px;
+}
 
 /* bio end */
 
 
 /* design portfolio */
+.design-portfolio {
+    
+}
+
+.website-selector {
+    justify-content: space-between;
+    margin: 30px;
+    
+}
+
+.website-button {
+    color: white;
+    background-color: var(--fourth-col);
+    border: none;
+    height: 220px;
+    width: 220px;
+    border-radius: 50%;
+    margin: 10px;
+}
+
+#first-button {
+    height: 500px;
+    width: 500px;
+}
+
+.website-button:hover  {
+    border: 3px solid var(--second-col);
+}
 
 /* design portfolio end */
 
 
 /* creative output */
+.creative-output {
+    background-image: url(../images/creative-photo.jpeg);
+    background-size: 100%;
+    background-position: center;
+}
+
+.creative-output-selector {
+    justify-content: space-evenly;
+}
+
+.creative-output-selector a {
+    text-decoration: none;
+    color: var(--second-col);
+    font-size: 100px;
+    font-weight: bold;
+    padding: 15px 40px 35px;
+    position: relative; top: 220px;
+}
+
+.creative-output-selector a:hover {
+    background-color: var(--second-col);
+    color: var(--fourth-col);
+    border-radius: 50%;
+}
 
 /* creative output end */
 
 
 /* contact */
+.contact {
+    background-color: var(--third-col);
+    color:var(--main-col);
+}
+#contact-photo {
+    position: flex;
+    height: 1000;
+    width: 500px;
+    overflow: hidden;
+}
 
-.contact img {
-    width: 20%;
+#contact-photo img {
+    width: 50%;
+    float: right;
+}
+
+.contact-form a p {
+    text-decoration: none;
+    color: var(--third-col);
 }
 
 /* contact end */
+
+
+/* footer */
+footer div {
+    line-height: 1.8;
+    text-align: right;
+    padding: 20px 40px;
+    color: var(--third-col);
+    background-color: var(--fourth-col);
+}

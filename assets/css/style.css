@@ -301,7 +301,73 @@ header h1 a {
 header nav ul li a {
     font-size: 18px;
 }
+
+.biography {
+    height: 1000px;
+}
+
+.biography div p {
+    font-size: 20px;
+}
+
+.design-portfolio {
+    height: 800px;
+}
+
+.website-selector {
+    margin: 0 0 0 60px;
+}
   
+.website-button {
+    font-size: 15px;
+    font-weight: bold;
+    height: 100px;
+    width: 100px;
+    margin: 25px;
+}
+
+#button-one {
+    height: 200px;
+    width: 200px;
+}
+
+.small-buttons {
+    width: 80%;
+}
+
+.creative-output {
+    height: 650px;
+}
+
+.creative-output-selector a {
+    font-size: 50px;
+    position: relative; top: 50px;
+    padding: 10px 15px;
+}
+
+.contact {
+    height: 1000px;
+}
+
+.contact-form {
+    padding: 20px 0 30px;
+}
+
+.contact-form form a, .contact-form form p {
+    text-align: left;
+    font-size: 25px;
+
+}
+
+.contact-photo {
+    height: 250px;
+    width: auto;
+}
+
+.contact-photo img {
+    height: 250px;
+}
+}
 
 /* Media queries for iPads/tablets */
 @media screen and (max-width: 768px) {
@@ -319,10 +385,37 @@ header h1 a {
 }
 
 header nav ul li a {
-    font-size: 12px;
+    font-size: 20px;
+    padding: 10px 7px;
+}
+
+.design-portfolio {
+    height: 950px;
+}
+
+.creative-output-selector a {
+    font-size: 50px;
+    position: relative; top: 50px;
+    padding: 30px 15px;
 }
 
 /* Media queries for phones and smaller */
 @media screen and (max-width: 575px) {
+section {
+    padding: 25px 5px;
+    height: 1000px;
+}
 
+section div h2 {
+    font-size: 30px;
+}
+
+.biography div p {
+    line-height: 1.5;
+    font-size: 16px;
+}
+
+.small-buttons {
+    width: 85%;
+}
 }
